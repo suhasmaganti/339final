@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<meta name = 'viewport' content='width=device-width, initial-scale=1'>
+	<link rel = "stylesheet" href = "css/reset.css">
+	<link rel = "stylesheet" href = "css/main.css">
+	<link rel = "stylesheet" href = "css/nav.css">
+	<link rel = "stylesheet" href = "css/gallery.css">
+	<link rel="icon" href="imgs/mserieslogo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Condensed%7CStaatliches" rel="stylesheet">
+	<title>Gallery</title>
+</head>
+
+<body>
+	<a href="#content" class = "skip" tabindex= "0">Skip to Content</a>
+	<header>
+		<nav class="topnav" id="myTopnav">
+		
+			<a href = "index.html" id="home">Home</a>
+			<a href = "m2.html">M2</a>
+			<a href = "m3.html">M3</a>
+			<a href = "m4.html">M4</a>
+			<a href = "m5.html">M5</a>
+			<a href = "gallery.html" class="active">Gallery</a>
+			<a href = "allvehicles.html">All Vehicles</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i></a>
+				
+		</nav>
+	</header>
+
+<main>
+<div id = "content">
+
+<div id = "banner">	
+	<h1>GALLERY</h1>
+</div>
+
+<div class = "grid-container">
+	<div class = "gallery">
+		<img src="imgs/1.jpg" alt="Grey, Blue and Red BMW Cars lined up"/>
+	</div>
+
+	<div class = "gallery">
+		<img src="imgs/oldcar.jpg" alt="An old Red BMW Model Car"/>
+	</div>
+
+	<div class = "gallery">
+		<img src="imgs/rims.jpeg" alt="Front rim of White BMW Car"/>
+	</div>	
+
+	<div class = "gallery">
+		<img src="imgs/streetlegal.jpg" alt="Blue, Red and White BMW Cars on the street"/>
+	</div>
+
+	<div class = "gallery">
+		<img src="imgs/streetlegal2.jpg" alt="Grey BMW Sports Car on track"/>
+	</div>
+
+	<div class = "gallery">
+		<img src="imgs/streetlegal3.jpeg" alt="Back of a Grey, Red and blue BMW Car driving in sunset"/>
+	</div>
+
+	<div class = "gallery">
+		<img src="imgs/engine.jpg" alt="Engine of a BMW Car"/>
+	</div>
+
+	<div class = "gallery">
+		<img src="imgs/engine2.jpg" alt="Engine of a BMW Car"/>
+	</div>
+
+	<div class = "gallery">
+		<img src="imgs/interior.jpg" alt="Interior of a BMW Car"/>
+	</div>
+
+	<div class = "gallery">
+		<img src="imgs/gear.jpg" alt="Stick shift of a BMW Car"/>
+	</div>
+</div>
+
+<div class="callout">
+  <div class="callout-header">Quiz</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <div class="callout-container">
+    <p>How well do you know BMW? Take the quiz!</p>
+    <a href="https://grizly.com/quizzes/do-you-know-bmw/">Click Here!</a>
+  </div>
+</div>
+
+</div>
+</main>
+
+<footer>
+  <p>*Disclaimer all the content on this page is taken from BMW USA</p>
+</footer>
+
+<!-- Javascript -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("myTopnav");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+</body>
+</html>
